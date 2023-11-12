@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <title>Mundo das Plantas</title>
+
+    <meta name="description" content="Mundo das Plantas" />
+
+    <meta name="keywords" content="Mundo das Plantas" />
+
+    <meta property="og:title" content="Mundo das Plantas" />
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:url" content="index.html" />
+
+    <meta property="og:image" content="../content/images/fixed/facebook.html" />
+
+    <meta property="og:description" content="Mundo das Plantas" />
+
+    <meta name="robots" content="follow,all" />
+
+    <link
+      rel="shortcut icon"
+      href="../content/images/icone.jpeg"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="../content/images/icone.jpeg" type="image/x-icon" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="../content/images/imagem.jpeg"
+    />
+
+    <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="../content/css/style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="../content/scripts/vegas2/vegas.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../content/scripts/fancybox/jquery.fancybox63b9.css?v=2.1.4"
+      type="text/css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      href="../content/scripts/fancybox/helpers/jquery.fancybox-buttons3447.css?v=1.0.5"
+      type="text/css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      href="../content/scripts/fancybox/helpers/jquery.fancybox-thumbsf2ad.css?v=1.0.7"
+      type="text/css"
+      media="screen"
+    />
+
+    <style>
+      .float {
+        position: fixed;
+        width: 60px;
+        height: 45px;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25d366;
+        color: #fff;
+        padding-top: 15px;
+        border-radius: 50px;
+        text-align: center;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+      }
+      .whatsapp {
+        margin-left: -10px;
+      }
+      .whatsapp > span {
+        padding-top: 12px;
+        color: #3d4e34;
+        font-size: 20px;
+        display: inline-block;
+      }
+      .whatsapp > span > svg {
+        margin-bottom: -8px;
+      }
+
+      .whatsapp-box {
+        margin: 10px 0 20px;
+        float: right;
+        display: right;
+        background: #bfd255;
+        background: -moz-linear-gradient(
+          top,
+          #bfd255 0%,
+          #8eb92a 50%,
+          #72aa00 51%,
+          #9ecb2d 100%
+        );
+        background: -webkit-linear-gradient(
+          top,
+          #bfd255 0%,
+          #8eb92a 50%,
+          #72aa00 51%,
+          #9ecb2d 100%
+        );
+        background: linear-gradient(
+          to bottom,
+          #bfd255 0%,
+          #8eb92a 50%,
+          #72aa00 51%,
+          #9ecb2d 100%
+        );
+        border-radius: 50px;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+        padding: 15px 30px;
+        color: #fff !important;
+        font-size: 20px;
+        height: 30px;
+        line-height: 30px;
+      }
+      .whatsapp-box > span {
+        display: inline-block;
+      }
+      .whatsapp-box > span > svg {
+        margin-bottom: -8px;
+        margin-right: 16px;
+      }
+      .whatsapp-box > span > b {
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <a
+      href="https://api.whatsapp.com/send?phone=5532999046959&amp;text=Ol%C3%A1%20quero%20saber%20mais%20informa%C3%A7%C3%B5es"
+      class="float"
+      target="_blank"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="30"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="#fff"
+          d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+        />
+      </svg>
+    </a>
+    <header class="shadowBox">
+      <div>
+        <div>
+          <a id="logo" href="../home/index.html"></a>
+          <a
+            href="https://api.whatsapp.com/send?phone=5532999046959&amp;text=Ol%C3%A1%20quero%20saber%20mais%20informa%C3%A7%C3%B5es"
+            class="whatsapp hide768"
+            target="_blank"
+          >
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#3d4e34"
+                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+                />
+              </svg>
+              <b>Entre em contato</b>
+            </span>
+          </a>
+          <a
+            class="show768"
+            href="https://www.instagram.com/mundodasplantasdn/"
+            style="padding: 11px 0"
+            title="Instagram"
+            alt="Instagram"
+            target="_blank"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+            >
+              <linearGradient id="instagram-gradient" x2="0.35" y2="1">
+                <stop offset="0%" stop-color="#f09433" />
+                <stop offset="25%" stop-color="#e6683c" />
+                <stop offset="50%" stop-color="#dc2743" />
+                <stop offset="75%" stop-color="#cc2366" />
+                <stop offset="100%" stop-color="#bc1888" />
+              </linearGradient>
+              <path
+                fill="url(#instagram-gradient)"
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+              />
+            </svg>
+          </a>
+          <nav>
+            <a
+              class="gradient-menu transition round show768 mobile"
+              href="javascript:;"
+              ><small><i></i><i></i><i></i></small>Menu</a
+            >
+            <a
+              class="gradient-menu transition round menuMobile"
+              href="../home/index.html"
+              >Home</a
+            >
+            <a
+              class="gradient-menu transition round menuMobile"
+              href="../palmeiras/index.html"
+              >Palmeiras</a
+            >
+            <a
+              class="gradient-menu transition round menuMobile"
+              href="index.html"
+              >Frutíferas</a
+            >
+            <a
+              class="gradient-menu transition round menuMobile"
+              href="../plantas/index.html"
+              >Plantas Ornamentais</a
+            >
+            <a
+              class="gradient-menu transition round menuMobile"
+              href="../contatos/index.html"
+              >Contatos</a
+            >
+            <a
+              class="transition hide768"
+              href="https://www.instagram.com/mundodasplantasdn/"
+              style="
+                padding: 3px 0;
+                background: transparent;
+                border: none;
+                box-shadow: none;
+              "
+              title="Instagram"
+              alt="Instagram"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+              >
+                <linearGradient id="instagram-gradient2" x2="0.35" y2="1">
+                  <stop offset="0%" stop-color="#f09433" />
+                  <stop offset="25%" stop-color="#e6683c" />
+                  <stop offset="50%" stop-color="#dc2743" />
+                  <stop offset="75%" stop-color="#cc2366" />
+                  <stop offset="100%" stop-color="#bc1888" />
+                </linearGradient>
+                <path
+                  fill="url(#instagram-gradient2)"
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                />
+              </svg>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div id="content">
+      <div class="clear" style="height: 20px"></div>
+
+      <div class="clear"></div>
+
+      <div class="homeTitle">
+        <h1>FRUTÍFERAS</h1>
+      </div>
+      <div class="clear"></div>
+
+      <div id="post" class="boxP">
+        <div class="clear"></div>
+        <a
+          href="https://api.whatsapp.com/send?phone=5532999046959&amp;text=Ol%C3%A1%20quero%20saber%20mais%20informa%C3%A7%C3%B5es"
+          class="whatsapp-box"
+          target="_blank"
+        >
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fff  "
+                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+              />
+            </svg>
+            <b>Faça seu orçamento</b>
+          </span>
+        </a>
+        <div class="clear"></div>
+
+        <div id="postContent" class="noImg">
+          <div class="texto clear" style="margin-top: -5px">
+            <p>
+              O Mundo das Plantas é um viveiro que se dedica na produção de suas
+              frutíferas e se destaca pela grande diversidade de espécies.
+            </p>
+
+            <p>
+              São elas: Abacate, Abiu, Acerola, Ameixa, Amora, Araçá Atemoia,
+              Banana, Biribá, Cacau, Cajamanga, Caju, Caqui, Carambola, Castanha,
+              Cereja, Ciriguela, Coco anao, Coco gigante, Figo, Fruta do milagre, Fruta pão,
+              Goiaba, Graviola, Grumixama, Guaraná, Ingá cipo (angá), Ingá
+              (angá), Jabuticaba híbrida e sabará, Jaca, Jambo, Jamelão, Jenipapo, Kiwi, Laranja,
+              Lichia, Limão, Maçã, Mamão, Mangostão, Mangostinho, Maracujá, Marmelo, Mexerica, Morango,
+              Nectarina, Nêspera, Pera, Pêssego, Pinha, Pitanga, Pitaya, Romã,
+              Sapoti, Tamarindo, Tangerina, Tanjo, Umbu, Uva, Uvaia.
+            </p>
+
+            <p>
+              Dispomos de técnica especializada para preparo, sangria, descanço,
+              transporte, plantio e cuidado com as frutíferas.
+            </p>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="contentSize">
+        <div class="clear"></div>
+        <div class="homeFotos">
+          <a
+            class="fancybox"
+            href="../content/images/adultas/abacate_capa.jpeg"
+            rel="galeria"
+          >
+            <div>
+              <div class="shadowBox round">
+                <figure>
+                  <img
+                    class="round"
+                    src="../content/images/adultas/abacate_capa.jpeg"
+                  />
+                  <h1><b>Abacate</b></h1>
+                </figure>
+              </div>
+            </div>
+          </a><a
+          class="fancybox"
+          href="../content/images/adultas/abiu_capa.jpeg"
+          rel="galeria"
+        >
+          <div>
+            <div class="shadowBox round">
+              <figure>
+                <img
+                  class="round"
+                  src="../content/images/adultas/abiu_capa.jpeg"
+                />
+                <h1><b>Abiu</b></h1>
+              </figure>
+            </div>
+          </div>
+        </a>
+          <a
+            class="fancybox"
+            href="../content/images/adultas/acerola_capa.jpeg"
+            rel="galeria"
+          >
+            <div>
+              <div class="shadowBox round">
+                <figure>
+                  <img
+                    class="round"
+                    src="../content/images/adultas/acerola_capa.jpeg"
+                  />
+                  <h1><b>Acerola</b></h1>
+                </figure>
+              </div>
+            </div>
+          </a><a
+          class="fancybox"
+          href="../content/images/adultas/ameixa_capa.jpeg"
+          rel="galeria"
+        >
+          <div>
+            <div class="shadowBox round">
+              <figure>
+                <img
+                  class="round"
+                  src="../content/images/adultas/ameixa_capa.jpeg"
+                />
+                <h1><b>Ameixa</b></h1>
+              </figure>
+            </div>
+          </div>
+        </a>
+          <a
+            class="fancybox"
+            href="../content/images/adultas/amora_capa.jpeg"
+            rel="galeria"
+          >
+            <div>
+              <div class="shadowBox round">
+                <figure>
+                  <img
+                    class="round"
+                    src="../content/images/adultas/amora_capa.jpeg"
+                  />
+                  <h1><b>Amora</b></h1>
+                </figure>
+              </div>
+            </div>
+          </a><a
+          class="fancybox"
+          href="../content/images/adultas/araçá_capa.jpeg"
+          rel="galeria"
+        >
+          <div>
+            <div class="shadowBox round">
+              <figure>
+                <img
+                  class="round"
+                  src="../content/images/adultas/araçá_capa.jpeg"
+                />
+                <h1><b>Araçá</b></h1>
+              </figure>
+            </div>
+          </div>
+        </a>
+          <a
+            class="fancybox"
+            href="../content/images/adultas/atemoia_capa.jpeg"
+            rel="galeria"
+          >
+            <div>
+              <div class="shadowBox round">
+                <figure>
+                  <img
+                    class="round"
+                    src="../content/images/adultas/atemoia_capa.jpeg"
+                  />
+                  <h1><b>Atemoia</b></h1>
+                </figure>
+              </div>
+            </div>
+          </a><a
+        class="fancybox"
+        href="../content/images/adultas/banana_capa.jpeg"
+        rel="galeria"
+      >
+        <div>
+          <div class="shadowBox round">
+            <figure>
+              <img
+                class="round"
+                src="../content/images/adultas/banana_capa.jpeg"
+              />
+              <h1><b>Banana</b></h1>
+            </figure>
+          </div>
+        </div>
+      </a><a
+      class="fancybox"
+      href="../content/images/adultas/biribá_capa.jpeg"
+      rel="galeria"
+      >
+      <div>
+        <div class="shadowBox round">
+          <figure>
+            <img
+              class="round"
+              src="../content/images/adultas/biribá_capa.jpeg"
+            />
+            <h1><b>Biribá</b></h1>
+          </figure>
+        </div>
+      </div>
+      </a><a
+      class="fancybox"
+      href="../content/images/adultas/cacau_capa.jpeg"
+      rel="galeria"
+    >
+      <div>
+        <div class="shadowBox round">
+          <figure>
+            <img
+              class="round"
+              src="../content/images/adultas/cacau_capa.jpeg"
+            />
+            <h1><b>Cacau</b></h1>
+          </figure>
+        </div>
+      </div>
+    </a><a
+    class="fancybox"
+    href="../content/images/adultas/cajamanga_capa.jpeg"
+    rel="galeria"
+    >
+    <div>
+      <div class="shadowBox round">
+        <figure>
+          <img
+            class="round"
+            src="../content/images/adultas/cajamanga_capa.jpeg"
+          />
+          <h1><b>Cajamanga</b></h1>
+        </figure>
+      </div>
+    </div>
+    </a><a
+    class="fancybox"
+    href="../content/images/adultas/caju_capa.jpeg"
+    rel="galeria"
+  >
+    <div>
+      <div class="shadowBox round">
+        <figure>
+          <img
+            class="round"
+            src="../content/images/adultas/caju_capa.jpeg"
+          />
+          <h1><b>Caju</b></h1>
+        </figure>
+      </div>
+    </div>
+  </a><a
+  class="fancybox"
+  href="../content/images/adultas/caqui_capa.jpeg"
+  rel="galeria"
+  >
+  <div>
+    <div class="shadowBox round">
+      <figure>
+        <img
+          class="round"
+          src="../content/images/adultas/caqui_capa.jpeg"
+        />
+        <h1><b>Caqui</b></h1>
+      </figure>
+    </div>
+  </div>
+  </a><a
+  class="fancybox"
+  href="../content/images/adultas/carambola_capa.jpeg"
+  rel="galeria"
+>
+  <div>
+    <div class="shadowBox round">
+      <figure>
+        <img
+          class="round"
+          src="../content/images/adultas/carambola_capa.jpeg"
+        />
+        <h1><b>Carambola</b></h1>
+      </figure>
+    </div>
+  </div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/castanha_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/castanha_capa.jpeg"
+      />
+      <h1><b>Castanha</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/cereja_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/cereja_capa.jpeg"
+      />
+      <h1><b>Cereja</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/ciriguela_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/ciriguela_capa.jpeg"
+      />
+      <h1><b>Ciriguela</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/cocoanão_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/cocoanão_capa.jpeg"
+      />
+      <h1><b>Coco anão</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/cocogigante_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/cocogigante_capa.jpeg"
+      />
+      <h1><b>Coco gigante</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/figo_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/figo_capa.jpeg"
+      />
+      <h1><b>Figo</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/frutadomilagre_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/frutadomilagre_capa.jpeg"
+      />
+      <h1><b>Fruta do milagre</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/frutapão_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/frutapão_capa.jpeg"
+      />
+      <h1><b>Fruta pão</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/goiaba_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/goiaba_capa.jpeg"
+      />
+      <h1><b>Goiaba</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/graviola_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/graviola_capa.jpeg"
+      />
+      <h1><b>Graviola</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/grumixama_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/grumixama_capa.jpeg"
+      />
+      <h1><b>Grumixama</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/guaraná_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/guaraná_capa.jpeg"
+      />
+      <h1><b>Guaraná</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/ingácipo_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/ingácipo_capa.jpeg"
+      />
+      <h1><b>Ingá cipó</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/ingá_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/ingá_capa.jpeg"
+      />
+      <h1><b>Ingá</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/jabuticaba_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/jabuticaba_capa.jpeg"
+      />
+      <h1><b>Jabuticaba híbrida e sabará</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/jaca_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/jaca_capa.jpeg"
+      />
+      <h1><b>Jaca</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/jambo_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/jambo_capa.jpeg"
+      />
+      <h1><b>Jambo</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/jamelão_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/jamelão_capa.jpeg"
+      />
+      <h1><b>Jamelão</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/jenipapo_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/jenipapo_capa.jpeg"
+      />
+      <h1><b>Jenipapo</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/kiwi_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/kiwi_capa.jpeg"
+      />
+      <h1><b>Kiwi</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/laranja_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/laranja_capa.jpeg"
+      />
+      <h1><b>Laranja</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/lichia_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/lichia_capa.jpeg"
+      />
+      <h1><b>Lichia</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/limão_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/limão_capa.jpeg"
+      />
+      <h1><b>Limão</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/maçã_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/maçã_capa.jpeg"
+      />
+      <h1><b>Maçã</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/mamão_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/mamão_capa.jpeg"
+      />
+      <h1><b>Mamão</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/manga_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/manga_capa.jpeg"
+      />
+      <h1><b>Manga</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/mangostão_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/mangostão_capa.jpeg"
+      />
+      <h1><b>Mangostão</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/mangostinho_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/mangostinho_capa.jpeg"
+      />
+      <h1><b>Mangostinho</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/maracujá_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/maracujá_capa.jpeg"
+      />
+      <h1><b>Maracujá</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/marmelo_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/marmelo_capa.jpeg"
+      />
+      <h1><b>Marmelo</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/mexerica_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/mexerica_capa.jpeg"
+      />
+      <h1><b>Mexerica</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/morango_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/morango_capa.jpeg"
+      />
+      <h1><b>Morango</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/nectarina_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/nectarina_capa.jpeg"
+      />
+      <h1><b>Nectarina</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/nêspera_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/nêspera_capa.jpeg"
+      />
+      <h1><b>Nêspera</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/pera_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/pera_capa.jpeg"
+      />
+      <h1><b>Pera</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/pêssego_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/pêssego_capa.jpeg"
+      />
+      <h1><b>Pêssego</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/pinha_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/pinha_capa.jpeg"
+      />
+      <h1><b>Pinha</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/pitanga_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/pitanga_capa.jpeg"
+      />
+      <h1><b>Pitanga</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/pitaya_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/pitaya_capa.jpeg"
+      />
+      <h1><b>Pitaya</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/romã_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/romã_capa.jpeg"
+      />
+      <h1><b>Romã</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/sapoti_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/sapoti_capa.jpeg"
+      />
+      <h1><b>Sapoti</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/tamarindo_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/tamarindo_capa.jpeg"
+      />
+      <h1><b>Tamarindo</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/tangerina_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/tangerina_capa.jpeg"
+      />
+      <h1><b>Tangerina</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/tanjo_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/tanjo_capa.jpeg"
+      />
+      <h1><b>Tanjo</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/umbu_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/umbu_capa.jpeg"
+      />
+      <h1><b>Umbu</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/uva_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/uva_capa.jpeg"
+      />
+      <h1><b>Uva</b></h1>
+    </figure>
+  </div>
+</div>
+</a><a
+class="fancybox"
+href="../content/images/adultas/uvaia_capa.jpeg"
+rel="galeria"
+>
+<div>
+  <div class="shadowBox round">
+    <figure>
+      <img
+        class="round"
+        src="../content/images/adultas/uvaia_capa.jpeg"
+      />
+      <h1><b>Uvaia</b></h1>
+    </figure>
+  </div>
+</div>
+</a>
+
+          <div class="clear"></div>
+        </div>
+
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div id="background-space"></div>
+    <footer>
+      <div>
+        <div>
+          <nav>
+            <a href="../home/index.html">Home</a>
+            <a href="../palmeiras/index.html">Palmeiras</a>
+            <a href="index.html">Frutíferas</a>
+            <a href="../plantas/index.html">Plantas Ornamentais</a>
+            <a href="../contatos/index.html">Contatos</a>
+          </nav>
+          <div id="rodapeEmail">
+            Tel.: 32 9 99046959 (whatsapp) e-mail:
+            <a
+              href="mailto:mundodasplanta@gmail.com
+Faça os Orçamentos Via Whatsapp 32999046959"
+              >mundodasplantas@gmail.com Faça os Orçamentos Via Whatsapp
+              32999046959</a
+            >
+          </div>
+          <div id="rodapeInfo">&copy; 2023 - Todos os direitos reservados</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../content/scripts/jquery.js" type="text/javascript"></script>
+    <script
+      src="../content/scripts/vegas2/vegas.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../content/scripts/fancybox/jquery.mousewheel-3.0.6.pack.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../content/scripts/fancybox/jquery.fancybox.pack63b9.js?v=2.1.4"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../content/scripts/fancybox/helpers/jquery.fancybox-buttons3447.js?v=1.0.5"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../content/scripts/fancybox/helpers/jquery.fancybox-media3447.js?v=1.0.5"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../content/scripts/fancybox/helpers/jquery.fancybox-thumbsf2ad.js?v=1.0.7"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../content/scripts/jquery.maskedinput.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(function () {
+        $(".fancybox").fancybox({
+          nextSpeed: "slow",
+
+          prevSpeed: "slow",
+
+          padding: 0,
+        });
+        $(".mobile").click(function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          if ($(this).hasClass("show")) {
+            $(".menuMobile").removeClass("show");
+          } else {
+            $(".menuMobile").addClass("show");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
